@@ -1,0 +1,22 @@
+# General
+venv/
+.env
+.DS_Store
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+
+# Backend
+backend/venv/
+backend/__pycache__/
+backend/db.sqlite3
+backend/media/
+backend/*.log
+backend/debug_*.py
+backend/test_*.py
+backend/check_data.py
+backend/drop_tables.py
+backend/inspect_*.py
+backend/populate_games.py
+backend/verify_backend.py
