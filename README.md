@@ -1,86 +1,86 @@
-# Game Zone - Professional E-Commerce Platform
+# TechShop - Profesyonel E-Ticaret Platformu
 
-Game Zone is a full-stack e-commerce application designed for purchasing digital game keys. It features a modern, responsive React frontend and a robust Django REST Framework backend.
+TechShop, dijital oyun anahtarları satın almak için tasarlanmış tam kapsamlı bir e-ticaret uygulamasıdır. Modern, duyarlı bir React ön yüzü ve sağlam bir Django REST Framework arka yüzüne sahiptir.
 
-## 🚀 Features
+## 🚀 Özellikler
 
--   **Modern UI/UX:** Dark-themed, responsive design with glassmorphism effects and smooth animations.
--   **User Authentication:** Secure JWT-based registration and login.
--   **Guest Access:** Browsing allowed for guests, but purchasing requires login.
--   **Product Manangment:** Categories, filtering, sorting, and steam-like search.
--   **Shopping Cart:** Real-time cart management with local storage persistence.
--   **Payments:** Integrated Stripe payment gateway with Webhooks for reliability.
--   **Profile:** Order history tracking and user statistics.
--   **Admin Panel:** Full control over products, orders, and users.
--   **Performance:** Lazy loading images and server-side pagination.
+-   **Modern Arayüz (UI/UX):** Karanlık temalı, cam efektli (glassmorphism) ve akıcı animasyonlara sahip duyarlı tasarım.
+-   **Kullanıcı Doğrulama:** Güvenli, JWT tabanlı kayıt olma ve giriş yapma sistemi.
+-   **Misafir Erişimi:** Misafirler ürünleri gezebilir, ancak satın alma işlemi için giriş yapmaları gerekir.
+-   **Ürün Yönetimi:** Kategoriler, filtreleme, sıralama ve Steam benzeri arama motoru.
+-   **Alışveriş Sepeti:** Yerel depolama (Local Storage) ile kalıcı, gerçek zamanlı sepet yönetimi.
+-   **Ödeme Sistemi:** Güvenilirlik için Webhook desteğiyle entegre edilmiş Stripe ödeme altyapısı.
+-   **Profil Sayfası:** Sipariş geçmişi takibi ve kullanıcı istatistikleri.
+-   **Yönetim Paneli:** Ürünler, siparişler ve kullanıcılar üzerinde tam kontrol sağlayan Admin paneli.
+-   **Performans:** Görseller için "Lazy Loading" (Tembel Yükleme) ve sunucu taraflı sayfalama (Pagination).
 
-## 🛠️ Technology Stack
+## 🛠️ Teknoloji Yığını
 
-### Frontend
--   **React 18** (Vite)
--   **React Router DOM** (Routing)
--   **Axios** (API Requests)
--   **React Toastify** (Notifications)
--   **Stripe.js** (Payments)
+### Frontend (Ön Yüz)
+-   **React 18** (Vite altyapısı ile)
+-   **React Router DOM** (Sayfa Yönlendirme)
+-   **Axios** (API İstekleri)
+-   **React Toastify** (Bildirimler)
+-   **Stripe.js** (Ödeme Arayüzü)
 
-### Backend
+### Backend (Arka Yüz)
 -   **Django 5**
 -   **Django REST Framework**
--   **SQLite** (Development DB)
--   **Simple JWT** (Authentication)
+-   **SQLite** (Geliştirme Veritabanı)
+-   **Simple JWT** (Token Tabanlı Kimlik Doğrulama)
 -   **Stripe Python SDK**
 
-## 📦 Installation Guide
+## 📦 Kurulum Rehberi
 
-### 1. Clone the Repository
+### 1. Projeyi Klonlayın
 ```bash
-git clone https://github.com/YOUR_USERNAME/GameZone.git
-cd GameZone
+git clone https://github.com/erentezcan/TechShop.git
+cd TechShop
 ```
 
-### 2. Backend Setup
+### 2. Backend Kurulumu
 ```bash
 cd backend
 python -m venv venv
-# Windows
+# Windows için
 venv\Scripts\activate
-# Mac/Linux
+# Mac/Linux için
 source venv/bin/activate
 
 pip install -r requirements.txt
 
-# Migrations
+# Veritabanı Göçleri (Migrations)
 python manage.py migrate
 
-# Create Admin User
+# Yönetici (Admin) Oluşturma
 python manage.py createsuperuser
 
-# Run Server
+# Sunucuyu Başlatma
 python manage.py runserver
 ```
 
-### 3. Frontend Setup
-Open a new terminal:
+### 3. Frontend Kurulumu
+Yeni bir terminal açın:
 ```bash
 cd frontend
 npm install
 npm run dev
 ```
 
-## 🔑 Environment Variables
+## 🔑 Çevresel Değişkenler (.env)
 
-Create a `.env` file in the `backend/` directory:
+`backend/` klasörü içinde bir `.env` dosyası oluşturun ve şu bilgileri ekleyin:
 
 ```env
 STRIPE_SECRET_KEY=sk_test_...
 STRIPE_WEBHOOK_SECRET=whsec_...
 ```
 
-## 📷 Usage
+## 📷 Kullanım
 
--   **Frontend:** `http://localhost:5173`
+-   **Frontend (Site):** `http://localhost:5173`
 -   **Backend API:** `http://localhost:8001/api/`
--   **Admin Panel:** `http://localhost:8001/admin/`
+-   **Admin Paneli:** `http://localhost:8001/admin/`
 
 ---
-Developed with ❤️ by [Your Name]
+[Eren Tezcan] tarafından ❤️ ile geliştirildi.
